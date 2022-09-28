@@ -1,3 +1,8 @@
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+    background: linear-gradient(#aaaaaa,white);
+}
+
 .menu{
     background-color: #bbbbbb;
     vertical-align: middle;
@@ -94,4 +99,23 @@ footer{
 .copyright{
     color: #fff;
     font-size: 10px;
+}
+
+.align-item-center{
+    text-align: center;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.titulo-principal::after{
+    content: "]";
+}
+.titulo-principal::before{
+    content: "[";
 }
