@@ -1,0 +1,291 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #3c92fa;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    color: var(--branco-principal);
+}
+
+.container{
+    margin: 16px 16px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./../img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main__title{
+    margin-top: 160px;
+    text-align: center;
+}
+
+.main__combo{
+    width: 300px;
+}
+
+.main__signCombo{
+    width: 100%;
+    background-color: var(--botao-azul);
+    border: #167BF7;
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 16px;
+    font-weight: 700;
+    color: var(--fonte-principal);
+    transition: 1s;
+}
+
+.main__signCombo:hover{
+    background-color: rgba(22,123,247,0.8);
+}
+
+.main__signAlura{
+    width: 100%;
+    background-color: transparent;
+    border:1px solid var(--branco-principal);
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 16px;
+    font-weight: 700;
+    color: var(--fonte-principal);
+    transition: 1s;
+}
+
+.main__signAlura:hover{
+    color: rgba(255,255,255,0.8);
+}
+
+.main__note{
+    margin-top: 8px;
+    font-size: 8px;
+    color: var(--cinza-secundario);
+}
+
+.general-info{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.general-info__platform span{
+    color: var(--cinza-secundario);
+}
+
+.general-info-2{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.general-info-3{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.device-info{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.device-info h3{
+    margin: 0;
+    font-size: 12px;
+}
+
+.device-info__tv img{
+    width: 32%;
+}
+
+.device-info__pc img{
+    width: 32%;
+}
+
+.device-info__mobile img{
+    width: 32%;
+}
+
+
+.footer{
+   
+}
+
+.footer__links{
+display: block;
+margin-top: 20px;
+
+}
+
+.footer__links ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.footer__links a{
+    display: inline;
+    font-size: 12px;
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+
+.footer__note{
+    margin-top: 8px;
+    font-size: 5px;
+    color: var(--cinza-secundario);
+    text-decoration: none;
+}
+
+@media screen and (min-width:810px) {
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;     
+        width: 100%;
+        background-position: 100%;
+        background-size: 90%
+    }
+
+    .main__title{
+        margin-top: 10px;
+        padding: 0px;
+    }
+
+    .main__combo{
+        grid-column: 1;
+        text-align: center;
+        width: 100%;
+    }
+
+    .main__combo img{
+        width: 60%;
+    }
+
+    .main__signCombo{
+        grid-column: 1;
+    }
+
+
+    .main__signAlura{
+        grid-column: 1;
+        background-color: transparent;
+        border:1px solid var(--branco-principal);
+    }
+
+    .main__note{
+        grid-column: 1;
+        text-align: center;
+    }
+
+    .general-info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin: 24px 0px;
+    }
+
+    .general-info img{
+        width: 90%;
+    }
+
+    .general-info-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        column-gap: 24px;
+        margin: 24px 0px;
+    }
+
+    .general-info-2__platform{
+        display: block;
+        grid-column: 1;
+        grid-row: 1;
+
+    }
+
+    .general-info-2 img{
+        display: block;
+        width: 90%;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .general-info-3{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .general-info-3 img{
+        width: 90%;
+    }
+
+    .device-info{
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .device-info__tv img{
+        width: 100%;
+    }
+
+    .device-info__pc img{
+        width: 100%;
+    }
+
+    .device-info__mobile img{
+        width: 100%;
+    }
+
+    .device-info h3{
+        font-size: 1.2rem;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__links ul{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: no-wrap;
+    }
+
+    .footer__links li{      
+       
+        padding: 16px;
+        text-align: center;
+    }
+
+    .footer__links li a{
+        font-size: 1rem;
+        transition: 0.5s;
+    }
+
+    .footer__links li a:hover{
+        color: var(--cinza-secundario);
+    }
+
+    .footer__note{
+        font-size: 0.7rem;
+        text-align: center;
+    }
+}
