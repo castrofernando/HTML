@@ -66,7 +66,7 @@ body{
     border:1px solid var(--branco-principal);
     border-radius: 8px;
     padding: 8px;
-    margin-top: 16px;
+    margin: 5px 0px 0px 0px;
     font-weight: 700;
     color: var(--fonte-principal);
     transition: 1s;
@@ -228,7 +228,7 @@ margin-top: 20px;
     }
 
     .main__signCombo{
-        grid-column: 1;
+        grid-column: 1;  
     }
 
 
@@ -236,6 +236,7 @@ margin-top: 20px;
         grid-column: 1;
         background-color: transparent;
         border:1px solid var(--branco-principal);
+        margin: 5px 0px 0px 0px;
     }
 
     .main__note{
