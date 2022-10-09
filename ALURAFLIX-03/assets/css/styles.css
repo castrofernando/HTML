@@ -53,6 +53,7 @@ body{
     font-weight: 700;
     color: var(--fonte-principal);
     transition: 1s;
+    cursor: pointer;
 }
 
 .main__signCombo:hover{
@@ -69,6 +70,7 @@ body{
     font-weight: 700;
     color: var(--fonte-principal);
     transition: 1s;
+    cursor: pointer;
 }
 
 .main__signAlura:hover{
@@ -115,6 +117,19 @@ body{
 
 .general-info-2 p{
     color: var(--cinza-secundario);
+}
+
+.general-info-2__button{
+    width: 100%;
+    background-color: var(--botao-azul);
+    border: #167BF7;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    color: var(--fonte-principal);
+    transition: 1s;
+    cursor: pointer;
 }
 
 .general-info-3{
@@ -259,6 +274,12 @@ margin-top: 20px;
         width: 90%;
         grid-column: 2;
         grid-row: 1;
+    }
+
+    .general-info-2__button{
+        display: inline-block;
+        width: auto;
+        cursor: pointer;
     }
 
     .general-info-3{
