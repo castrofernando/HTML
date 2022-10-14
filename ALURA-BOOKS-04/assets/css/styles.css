@@ -1,11 +1,16 @@
 @import url(./header.css);
+@import url(./banner.css);
+@import url(./carrousel.css);
+@import url(./card.css);
 
 :root{
     --cor-de-fundo:#EBECEE;
     --cor-de-fundo-menu: #ffffff;
-    --cor-destaque: ##EB9B00;
+    --cor-destaque: #EB9B00;
     --cor-texto-menu: #002F52;
     --font-principal: 'Poppins', sans-serif;
+    --cor-fundo-gradient: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --cor-texto-claro: #FFFFFF;
 }
 
 body{

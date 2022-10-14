@@ -12,6 +12,9 @@
 
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
 </head>
 
 <body>
@@ -52,6 +55,63 @@
         </div>
 
     </header>
+    <section class="banner">
+        <h1 class="banner__title">Já sabe por onde começar?</h1>
+        <p class="banner__content">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner__search" placeholder="Qual será sua próxima leitura?">
+    </section>
+    <section class="carrousel">
+        <h2 class="carrousel__title">Últimos lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img class="swipper__img" src="./assets/img/Livros/Angular.svg" alt="Livro de Angular" ></div>
+            <div class="swiper-slide"><img class="swipper__img" src="./assets/img/Livros/ApacheKafka.svg" alt="Livro de Angular" ></div>
+            <div class="swiper-slide"><img class="swipper__img" src="./assets/img/Livros/MEAN.svg" alt="Livro de Angular" ></div>
+            <div class="swiper-slide"><img class="swipper__img" src="./assets/img/Livros/MetricasAgeis.svg" alt="Livro de Métricas" ></div>
+            <div class="swiper-slide"><img class="swipper__img" src="./assets/img/Livros/Tuning.svg" alt="Livro de Tunning SQL" ></div>
+            </div>
+        </div>
+    </section>
+    <section class="card">
+        <div class="card__body">
+            <div class="card__content">
+                <h1>Talvez você também se interesse por...</h1>
+                <h2>Angular 11 e Firebase</h2>
+                <p>Construindo uma aplicação integrada com a plataforma do Google.</p>
+            </div>
+            <div class="card__image-box">
+                <img src="assets/img/Angular.svg" alt="Imagem do livro angular">
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="card-footer__icon-box">
+                <img src="assets/img/Favoritos.svg" alt="Favoritar">
+                <img src="assets/img/Compras.svg" alt="Colocar no carrinho de compras">
+            </div>
+            <button class="card-footer__button">Saiba mais</button>
+        </div>   
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        slidesPerView:3,
+        spaceBetween: 10,
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+        });
+
+    </script>
+
 </body>
 
 </html>

@@ -1,0 +1,30 @@
+.carrousel{
+    background-color: var(--cor-de-fundo-menu);
+    text-align: center;
+}
+
+.carrousel__title{
+    color: var(--cor-destaque);
+    padding: 20px 0 8px 0;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.swiper {
+    background-color: var(--cor-de-fundo);
+}
+
+.swiper-wrapper{
+    background-color: var(--cor-de-fundo);
+    margin-top: 0.5em;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper-pagination{
+    margin-top: 0.5em;
+    position: initial !important;
+}
