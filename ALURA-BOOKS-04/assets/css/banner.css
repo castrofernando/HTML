@@ -29,8 +29,9 @@
     color: var(--cor-texto-claro);
     text-align: center;
     font-weight: 500;
+    font-size: 12px;
     font-family: var(--font-principal);
     background-image: url(../img/Lupa.svg);
     background-repeat: no-repeat;
-    background-position: 2em center;
+    background-position: 1em;
 }

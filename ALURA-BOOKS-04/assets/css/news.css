@@ -1,0 +1,73 @@
+.news{
+    background-color: var(--cor-de-fundo-menu);
+    padding-top: 1em;
+}
+
+.news__visited{
+    background: var(--cor-fundo-gradient);
+    padding: 1.5em 1em;
+    text-align: center;
+}
+
+.news__visited__title{
+    color: var(--cor-texto-claro);
+    margin-bottom: 2em;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.news__visited__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.news__visited__item{
+    background-color: var(--cor-destaque);
+    margin: 0.5em 0.5em ;
+}
+
+.news__visited__link{
+    display: block;
+    color: var(--cor-texto-claro);
+    text-decoration: none;
+    padding: 1em 1.5em;
+}
+
+.news__register{
+    padding: 1.5em 1.5em;
+}
+
+.news__register__title{
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.news__register__content{
+    font-weight: 300;
+}
+
+.news__register__email{
+    background-color: transparent;
+    border: 1px solid var(--cor-texto-menu);
+    border-radius: 24px;
+    margin-top: 1.5em;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.news__register__email::placeholder{
+    background-image: url('../img/Email.svg');
+    background-repeat: no-repeat;
+    background-position: 1em;
+    padding-left: 3em;
+    color: var(--cor-texto-menu);
+    font-family: var(--font-principal);
+    font-weight: 500;
+}
+
+hr{
+    padding: 0;
+    margin: 0;
+}
