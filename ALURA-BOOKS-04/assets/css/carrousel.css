@@ -1,5 +1,5 @@
 .carrousel{
-    background-color: var(--cor-de-fundo-menu);
+    background-color: var(--cor-de-fundo);
     text-align: center;
 }
 
@@ -9,6 +9,7 @@
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
+    background-color: var(--cor-de-fundo-menu);
 }
 
 .swiper {
@@ -27,4 +28,47 @@
 .swiper-pagination{
     margin-top: 0.5em;
     position: initial !important;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    display: none !important;
+}
+
+/* Tamanho para tablet */
+@media screen  and (min-width: 1024px){
+
+    .swiper {
+        width: 80%;
+        position: relative;
+        margin: auto;
+    }
+
+    .swiper-button-prev,.swiper-button-next{
+        background: var(--cor-fundo-gradient);
+        border-radius: 50%;
+        color: var(--cor-texto-claro);
+        text-decoration: none;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        width: 48px !important;
+        height: 48px !important;
+        position: absolute !important;
+    }
+
+    .swiper-button-prev::after{
+        color: white;
+        font-size: 1em !important;
+        font-weight: 700;
+    }
+
+    .swiper-button-next::after{
+        color: white;
+        font-size: 1em !important;
+        font-weight: 700;
+    }
+
+    .swiper-slide img{
+        width: 65%;
+    }
 }

@@ -71,3 +71,25 @@ hr{
     padding: 0;
     margin: 0;
 }
+
+/* Tamanho de Tablet*/
+@media screen and (min-width: 1024px){
+
+    .news__visited{
+        padding: 1.5em 5em; 
+    }
+    .news__register{
+        display: flex;
+        justify-content: space-between;
+        padding: 3em 5em; 
+    }
+
+    .news__register__wrapper{
+        margin: auto;
+    }
+
+    .news__register__email{
+        width: 300px;
+        margin: auto;
+    }
+}

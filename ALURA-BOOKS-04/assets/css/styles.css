@@ -13,6 +13,8 @@
     --font-principal: 'Poppins', sans-serif;
     --cor-fundo-gradient: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --cor-texto-claro: #FFFFFF;
+    --cor-texto-rodape: #858585;
+
 }
 
 body{
@@ -20,4 +22,10 @@ body{
     font-family: var(--font-principal);
     font-size: 16px;
     font-weight: 400;
+    box-sizing: border-box;
 }
+
+a{
+    cursor: pointer;
+}
+

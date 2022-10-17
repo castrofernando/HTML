@@ -27,6 +27,7 @@
            
             
             <img src="assets/img/Logo.svg" class="container__imagem" alt="Logo da alura books">
+            <h2 class="cabecalho__titulo"><span class="cabecalho__titulo__destaque">Alura</span>Books</h2>
             <nav class="menu">
                 <ul class="menu__lista">
                     <li class="menu__lista__titulo">Categorias</li>
@@ -47,9 +48,39 @@
                     </li>
                 </ul>
             </nav>
+            <nav class="menu-tablet">
+                <ul class="menu-tablet__lista">                 
+                    <li class="menu-tablet__lista__item">                  
+                        <a for="menu-categoria-tablet" class="menu-tablet__lista__link">Categorias</a>
+                        <ul class="menu-tablet__lista__categoria">
+                            <li class="menu-tablet__lista__categoria__item">
+                                <a href="#" class="menu-tablet__lista__categoria__link">Programação</a>
+                            </li>
+                            <li class="menu-tablet__lista__categoria__item">
+                                <a href="#" class="menu-tablet__lista__categoria__link">Front-End</a>
+                            </li>
+                            <li class="menu-tablet__lista__categoria__item">
+                                <a href="#" class="menu-tablet__lista__categoria__link">Infraestrutura</a>
+                            </li>
+                            <li class="menu-tablet__lista__categoria__item">
+                                <a href="#" class="menu-tablet__lista__categoria__link">Business</a>
+                            </li>
+                            <li class="menu-tablet__lista__categoria__item">
+                                <a href="#" class="menu-tablet__lista__categoria__link">Design & UX</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-tablet__lista__item">
+                        <a href="#" class="menu-tablet__lista__link">Favoritos</a>
+                    </li>
+                    <li class="menu-tablet__lista__item">
+                        <a href="#" class="menu-tablet__lista__link">Minha Estante</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
         <div class="container">
-            <img src="assets/img/Favoritos.svg" class="container__imagem" alt="Meus favoritos">
+            <img src="assets/img/Favoritos.svg" class="container__imagem favoritos" alt="Meus favoritos">
             <img src="assets/img/Compras.svg" class="container__imagem" alt="Minhas compras">
             <img src="assets/img/Usuario.svg" class="container__imagem" alt="Meu usuário">
         </div>
@@ -69,12 +100,15 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide"><img class="swipper__img" src="./assets/img/Livros/Angular.svg" alt="Livro de Angular" ></div>
-            <div class="swiper-slide"><img class="swipper__img" src="./assets/img/Livros/ApacheKafka.svg" alt="Livro de Angular" ></div>
-            <div class="swiper-slide"><img class="swipper__img" src="./assets/img/Livros/MEAN.svg" alt="Livro de Angular" ></div>
-            <div class="swiper-slide"><img class="swipper__img" src="./assets/img/Livros/MetricasAgeis.svg" alt="Livro de Métricas" ></div>
-            <div class="swiper-slide"><img class="swipper__img" src="./assets/img/Livros/Tuning.svg" alt="Livro de Tunning SQL" ></div>
+                <div class="swiper-slide"><img class="swipper__img" src="./assets/img/Livros/Angular.svg" alt="Livro de Angular" ></div>
+                <div class="swiper-slide"><img class="swipper__img" src="./assets/img/Livros/ApacheKafka.svg" alt="Livro de Angular" ></div>
+                <div class="swiper-slide"><img class="swipper__img" src="./assets/img/Livros/MEAN.svg" alt="Livro de Angular" ></div>
+                <div class="swiper-slide"><img class="swipper__img" src="./assets/img/Livros/MetricasAgeis.svg" alt="Livro de Métricas" ></div>
+                <div class="swiper-slide"><img class="swipper__img" src="./assets/img/Livros/Tuning.svg" alt="Livro de Tunning SQL" ></div>
             </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </section>
     <section class="card">
@@ -112,6 +146,9 @@
             <div class="swiper-slide"><img class="swipper__img" src="./assets/img/Livros/MetricasAgeis.svg" alt="Livro de Métricas" ></div>
             <div class="swiper-slide"><img class="swipper__img" src="./assets/img/Livros/Tuning.svg" alt="Livro de Tunning SQL" ></div>
             </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
         </div>
     </section>
     <section class="card">
@@ -168,8 +205,10 @@
         </div>
 
         <div class="news__register">
-            <h1 class="news__register__title">Fique por dentro das novidades!</h1>
-            <p class="news__register__content">Atualizações de e-books, novos livros, promoções e outros.</p>
+            <div class="news__register__wrapper">
+                <h1 class="news__register__title">Fique por dentro das novidades!</h1>
+                <p class="news__register__content">Atualizações de e-books, novos livros, promoções e outros.</p>
+            </div>
             <input type="email" class="news__register__email" placeholder="Cadastre seu e-mail">
         </div>
     </section>
@@ -178,6 +217,119 @@
 
     <footer class="footer">
         <p class="footer__title">Grupo Alura</p>
+        <div class="footer__educacao">
+            <h2 class="footer__educacao__title">Educação</h2>
+            <ul class="footer__educacao__lista">
+                <li class="footer__educacao__item">
+                    <a href="" class="footer__educacao__link">
+                        <img src="assets/img/rodape/Caelum.svg" alt="Logo Caelum" class="footer__educacao__imagem">
+                        Caelum
+                    </a>
+                </li>
+                <li class="footer__educacao__item">
+                    <a href="" class="footer__educacao__link">
+                        <img src="assets/img/rodape/CasaDoCodigo.svg" alt="Logo casa do código" class="footer__educacao__imagem">
+                        Casa do Código
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer__educacao">
+            <h2 class="footer__educacao__title">Educação Online</h2>
+            <ul class="footer__educacao__lista">
+                <li class="footer__educacao__item">
+                    <a href="" class="footer__educacao__link">
+                        <img src="assets/img/rodape/Alura.svg" alt="Logo Alura" class="footer__educacao__imagem">
+                        Alura
+                    </a>
+                </li>
+                <li class="footer__educacao__item">
+                    <a href="" class="footer__educacao__link">
+                        <img src="assets/img/rodape/AluraEmpresas.svg" alt="Logo alura para empresas" class="footer__educacao__imagem">
+                        Alura para Empresas
+                    </a>
+                </li>
+                <li class="footer__educacao__item">
+                    <a href="" class="footer__educacao__link">
+                        <img src="assets/img/rodape/Alura.svg" alt="Logo alura LATAM" class="footer__educacao__imagem">
+                        Alura LATAM
+                    </a>
+                </li>
+                <li class="footer__educacao__item">
+                    <a href="" class="footer__educacao__link">
+                        <img src="assets/img/rodape/AluraStart.svg" alt="Logo alura Start" class="footer__educacao__imagem">
+                        Alura Start
+                    </a>
+                </li>
+                <li class="footer__educacao__item">
+                    <a href="" class="footer__educacao__link">
+                        <img src="assets/img/rodape/MusicDot.svg" alt="Logo music dot" class="footer__educacao__imagem">
+                        Music Dot
+                    </a>
+                </li>
+                <li class="footer__educacao__item">
+                    <a href="" class="footer__educacao__link">
+                        <img src="assets/img/rodape/AluraLingua.svg" alt="Logo music dot" class="footer__educacao__imagem">
+                        Alura Língua
+                    </a>
+                </li>
+                <li class="footer__educacao__item">
+                    <a href="" class="footer__educacao__link">
+                        <img src="assets/img/rodape/PM3.svg" alt="Logo music dot" class="footer__educacao__imagem">
+                        PM3
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer__comunidade">
+            <h2 class="footer__comunidade__title">Comunidade</h2>
+            <ul class="footer__comunidade__lista">
+                <li class="footer__comunidade__item">
+                    <a href="" class="footer__comunidade__link">
+                        <img src="assets/img/rodape/HipstersTech.svg" alt="Logo Hipster podcast" class="footer__comunidade__imagem">
+                        Hipsters ponto Tech
+                    </a>
+                </li>
+                <li class="footer__comunidade__item">
+                    <a href="" class="footer__comunidade__link">
+                        <img src="assets/img/rodape/Scuba.svg" alt="Logo Scuba" class="footer__comunidade__imagem">
+                        Scuba Dev
+                    </a>
+                </li>
+                <li class="footer__comunidade__item">
+                    <a href="" class="footer__comunidade__link">
+                        <img src="assets/img/rodape/Layers.svg" alt="Logo Layers ponto tech" class="footer__comunidade__imagem">
+                        Layers ponto Tech
+                    </a>
+                </li>
+                <li class="footer__comunidade__item">
+                    <a href="" class="footer__comunidade__link">
+                        <img src="assets/img/rodape/LikeABoss.svg" alt="Logo Like a boss" class="footer__comunidade__imagem">
+                        Like a Boss
+                    </a>
+                </li>
+                <li class="footer__comunidade__item">
+                    <a href="" class="footer__comunidade__link">
+                        <img src="assets/img/rodape/CarreiraSemFronteira.svg" alt="Logo Carreira Sem Fronteira" class="footer__comunidade__imagem">
+                        Carreira sem Fronteira
+                    </a>
+                </li>
+                <li class="footer__comunidade__item">
+                    <a href="" class="footer__comunidade__link">
+                        <img src="assets/img/rodape/HipstersJobs.svg" alt="Logo do hipster jobs" class="footer__comunidade__imagem">
+                        Hipsters ponto Jobs
+                    </a>
+                </li>
+                <li class="footer__comunidade__item">
+                    <a href="" class="footer__comunidade__link">
+                        <img src="assets/img/rodape/GUJ.svg" alt="Logo do GUJ" class="footer__comunidade__imagem">
+                        GUJ
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -190,6 +342,11 @@
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
+        },
+          // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
         });
 
