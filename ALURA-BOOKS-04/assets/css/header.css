@@ -139,6 +139,11 @@
         color: var(--cor-texto-claro);
     }
 
+    .menu-tablet li a:hover{
+     background: var(--cor-fundo-gradient);
+     color: var(--cor-texto-claro);
+    }
+
     .menu-tablet > ul li:hover > ul,
     ul li ul:hover { 
       display: block;
